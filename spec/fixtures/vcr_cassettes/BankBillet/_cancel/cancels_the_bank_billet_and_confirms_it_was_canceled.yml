@@ -1,0 +1,379 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.kobana.com.br/v1/bank_billets
+    body:
+      encoding: UTF-8
+      string: '{"customer_address":"Rua da Casa","customer_neighborhood":"Bairro","customer_zipcode":"01310100","customer_city_name":"São
+        Paulo","customer_state":"SP","customer_cnpj_cpf":"16.974.923/0001-84","customer_person_name":"Fulano
+        da Silva","expire_at":"2025-12-31","amount":"100.00"}'
+    headers:
+      Authorization:
+      - Bearer <BEARER_TOKEN>
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708968304&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=B87dBlZL%2BwYQ316X5CNPasmYleHCVJp4mBSZNCV91lU%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1708968304&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=B87dBlZL%2BwYQ316X5CNPasmYleHCVJp4mBSZNCV91lU%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Expect-Ct:
+      - max-age=0, report-uri="https://boletosimples.report-uri.com/r/d/ct/reportOnly"
+      Cross-Origin-Resource-Policy:
+      - cross-origin
+      Cross-Origin-Embedder-Policy:
+      - unsafe-none
+      Cross-Origin-Opener-Policy:
+      - unsafe-none
+      Location:
+      - https://api-sandbox.kobana.com.br/api/v1/bank_billets/632285
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4983'
+      Ratelimit-Limit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4983'
+      Etag:
+      - W/"9d5b548d1368626772fe20b77c298d71"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - 'base-uri ''none''; default-src ''self'' https://app-sandbox.kobana.com.br
+        https://boletosimples.com.br https://*.boletosimples.com.br https://kobana.com.br
+        https://*.kobana.com.br; font-src ''self'' data: https://app-sandbox.kobana.com.br
+        https://fonts.googleapis.com https://fonts.gstatic.com https://themes.googleusercontent.com
+        https://cdnjs.cloudflare.com https://fonts.intercomcdn.com; img-src ''self''
+        data: https://app-sandbox.kobana.com.br https://maps.googleapis.com https://boleto.test:5001
+        https://bole.to https://*.google-analytics.com https://*.googletagmanager.com
+        https://ssl.gstatic.com https://www.gstatic.com https://*.g.doubleclick.net
+        https://*.google.com https://*.google.com.br https://googleads.g.doubleclick.net
+        https://www.facebook.com https://secure.gravatar.com https://albato.com https://zapier-images.imgix.net
+        https://boletosimples-sandbox.s3.amazonaws.com https://kobana-sandbox.s3.amazonaws.com
+        https://d3caatrp30sdc5.cloudfront.net; object-src ''none''; script-src ''self''
+        ''unsafe-inline'' ''strict-dynamic'' https://app-sandbox.kobana.com.br https://cdn.zapier.com
+        https://albato.com https://widget.pluga.co ''nonce-''; style-src ''self''
+        ''unsafe-inline'' https://app-sandbox.kobana.com.br https://fonts.googleapis.com
+        https://tagmanager.google.com https://cdn.zapier.com https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+        https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css;
+        child-src ''self'' https://www.googleadservices.com https://docs.google.com
+        https://googleads.g.doubleclick.net https://www.google.com https://www.google.com.br
+        https://app.popupdomination.com https://bid.g.doubleclick.net https://widget.pluga.co
+        https://www.googletagmanager.com https://www.facebook.com https://www.youtube.com
+        https://www.recaptcha.net; connect-src ''self'' https://boletosimples.com.br
+        https://*.boletosimples.com.br https://kobana.com.br https://*.kobana.com.br
+        https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com
+        https://*.g.doubleclick.net https://*.google.com https://*.google.com.br https://*.amplitude.com
+        https://*.mixpanel.com https://*.mxpnl.com https://*.intercom.io wss://*.intercom.io
+        https://albato.com https://zapier.com https://api.zapier.com; report-uri https://boletosimples.report-uri.com/r/d/csp/reportOnly'
+      X-Request-Id:
+      - 3b7ec673-d1eb-43fe-9886-06b09fbc05e0
+      X-Runtime:
+      - '0.047142'
+      Date:
+      - Mon, 26 Feb 2024 17:25:04 GMT
+      X-Rack-Cache:
+      - invalidate, pass
+      Strict-Transport-Security:
+      - max-age=31556952; includeSubDomains; preload
+      X-Rack-Cors:
+      - miss; no-origin
+      Vary:
+      - Origin,Accept-Encoding
+      Via:
+      - 1.1 vegur, 1.1 16d910967d343c8da7828222a653755e.cloudfront.net (CloudFront)
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - IAD12-P3
+      X-Amz-Cf-Id:
+      - VjzEp1WeHvHMIYMXLeIpn_hBz209S-nKve__YFvuxObmEdnlINRuVw==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6NjMyMjg1LCJleHBpcmVfYXQiOiIyMDI1LTEyLTMxIiwicGFpZF9hdCI6bnVsbCwiZGVzY3JpcHRpb24iOm51bGwsInN0YXR1cyI6ImdlbmVyYXRpbmciLCJyZWdpc3RyYXRpb25fc3RhdHVzIjoicGVuZGluZyIsImN1c3RvbWVyX3BlcnNvbl9uYW1lIjoiRnVsYW5vIGRhIFNpbHZhIiwiY3VzdG9tZXJfY25wal9jcGYiOiIxNi45NzQuOTIzLzAwMDEtODQiLCJjdXN0b21lcl9hZGRyZXNzIjoiUnVhIGRhIENhc2EiLCJjdXN0b21lcl9zdGF0ZSI6IlNQIiwiY3VzdG9tZXJfbmVpZ2hib3Job29kIjoiQmFpcnJvIiwiY3VzdG9tZXJfemlwY29kZSI6IjAxMzEwMTAwIiwiY3VzdG9tZXJfYWRkcmVzc19udW1iZXIiOm51bGwsImN1c3RvbWVyX2FkZHJlc3NfY29tcGxlbWVudCI6bnVsbCwiY3VzdG9tZXJfcGhvbmVfbnVtYmVyIjpudWxsLCJjdXN0b21lcl9lbWFpbCI6bnVsbCwiY3VzdG9tZXJfZW1haWxfY2MiOm51bGwsImN1c3RvbWVyX2lnbm9yZV9lbWFpbCI6bnVsbCwiY3VzdG9tZXJfaWdub3JlX3NtcyI6bnVsbCwiY3VzdG9tZXJfbW9iaWxlX2xvY2FsX2NvZGUiOm51bGwsImN1c3RvbWVyX21vYmlsZV9udW1iZXIiOm51bGwsImN1c3RvbWVyX25pY2tuYW1lIjpudWxsLCJjdXN0b21lcl9ub3RlcyI6bnVsbCwiY3JlYXRlZF92aWFfYXBpIjp0cnVlLCJjdXN0b21lcl9jaXR5X25hbWUiOiJTw6NvIFBhdWxvIiwicGFpZF9hbW91bnQiOm51bGwsImFtb3VudCI6MTAwLjAsInVybCI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyIiwiZm9ybWF0cyI6eyJkZWZhdWx0IjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIiLCJwbmciOiJodHRwczovL3NhbmRib3guYm9sZS50by8zL2V4dmVkci5wbmciLCJwZGYiOiJodHRwczovL3NhbmRib3guYm9sZS50by8zL2V4dmVkci5wZGYiLCJib2xldG9faGlicmlkbyI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyL2JvbGV0b19oaWJyaWRvIiwiYm9sZXRvX3BpeCI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyL2JvbGV0b19waXgiLCJiYXJjb2RlIjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIvYmFyY29kZSIsImVudmVsb3BlIjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIvZW52ZWxvcGUiLCJsZXR0ZXIiOiJodHRwczovL3NhbmRib3guYm9sZS50by8zL2V4dmVkci9sZXR0ZXIiLCJsaW5lIjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIvbGluZSIsInJlY2libyI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyL3JlY2libyJ9LCJtZXRhIjpudWxsLCJmaW5lX2Zvcl9kZWxheSI6bnVsbCwiZmluZV90eXBlIjowLCJmaW5lX3BlcmNlbnRhZ2UiOm51bGwsImZpbmVfdmFsdWUiOm51bGwsImRheXNfZm9yX2ZpbmUiOm51bGwsImxhdGVfcGF5bWVudF9pbnRlcmVzdCI6bnVsbCwiaW50ZXJlc3RfdHlwZSI6MCwiaW50ZXJlc3RfZGFpbHlfdmFsdWUiOm51bGwsImludGVyZXN0X2RhaWx5X3BlcmNlbnRhZ2UiOm51bGwsImludGVyZXN0X21vbnRobHlfcGVyY2VudGFnZSI6bnVsbCwiZGF5c19mb3JfaW50ZXJlc3QiOm51bGwsImRpc2NvdW50X3R5cGUiOjAsImRpc2NvdW50X2xpbWl0X2RhdGUiOm51bGwsImRpc2NvdW50X3ZhbHVlIjpudWxsLCJkaXNjb3VudF9wZXJjZW50YWdlIjpudWxsLCJkYXlzX2Zvcl9yZXZva2UiOm51bGwsIm5vdGVzIjpudWxsLCJwYXltZW50X2NvdW50IjoxLCJiYW5rX2JpbGxldF9hY2NvdW50X2lkIjo1NTk5LCJiZW5lZmljaWFyeV9uYW1lIjoiSm/Do28gU2lsdmEiLCJiZW5lZmljaWFyeV9jbnBqX2NwZiI6IjE2Ljk3NC45MjMvMDAwMS04NCIsImJlbmVmaWNpYXJ5X2FkZHJlc3MiOiJBdmVuaWRhIFBhdWxpc3RhLCAxMDAwLCBCZWxhIFZpc3RhLCBTw6NvIFBhdWxvLCBTUCwgMDEzMTAxMDAiLCJiZW5lZmljaWFyeV9hc3NpZ25vcl9jb2RlIjoiMDAwMTUvMDAwMDAyNCIsImd1YXJhbnRvcl9uYW1lIjpudWxsLCJndWFyYW50b3JfY25wal9jcGYiOm51bGwsInBheW1lbnRfcGxhY2UiOiJQYWfDoXZlbCBlbSBxdWFscXVlciBiYW5jbyBhdMOpIGEgZGF0YSBkZSB2ZW5jaW1lbnRvLiIsImluc3RydWN0aW9ucyI6bnVsbCwiZG9jdW1lbnRfZGF0ZSI6bnVsbCwiZG9jdW1lbnRfdHlwZSI6IjAyIiwiZG9jdW1lbnRfbnVtYmVyIjpudWxsLCJhY2NlcHRhbmNlIjoiTiIsInByb2Nlc3NlZF9vdXJfbnVtYmVyIjoiMDAwMTUvMDAxLzAwMDAwMDAxNDEtOSIsInByb2Nlc3NlZF9vdXJfbnVtYmVyX3JhdyI6IjAwMDE1MDAxMDAwMDAwMDE0MTkiLCJiYW5rX2NvbnRyYWN0X3NsdWciOiJleGFtcGxlLWJhbmstYnMtMSIsImFnZW5jeV9udW1iZXIiOiIxMjM0IiwiYWdlbmN5X2RpZ2l0IjoiNSIsImFjY291bnRfbnVtYmVyIjoiMTIzMTIzIiwiYWNjb3VudF9kaWdpdCI6IjQiLCJleHRyYTEiOm51bGwsImV4dHJhMV9kaWdpdCI6bnVsbCwiZXh0cmEyIjpudWxsLCJleHRyYTJfZGlnaXQiOm51bGwsImxpbmUiOiIwMDA5MC4wMDEwMCAwMTAwMC4wMDAwMDggMDAwMDAuMDE0MTkxIDEgMTMxMjAwMDAwMTAwMDAiLCJvdXJfbnVtYmVyIjoiMTQxIiwiY3VzdG9tZXJfc3Vic2NyaXB0aW9uX2lkIjpudWxsLCJpbnN0YWxsbWVudF90b3RhbCI6bnVsbCwiaW5zdGFsbG1lbnRfbnVtYmVyIjpudWxsLCJpbnN0YWxsbWVudF9pZCI6bnVsbCwiY2FybmVfdXJsIjpudWxsLCJiYW5rX2JpbGxldF9sYXlvdXRfaWQiOm51bGwsImNyZWF0ZWRfYXQiOiIyMDI0LTAyLTI2VDE0OjI1OjA0LTAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMjQtMDItMjZUMTQ6MjU6MDQtMDM6MDAiLCJ0YWdzIjpbXSwidGFnX2xpc3QiOm51bGwsImRvY3VtZW50X3R5cGVfbGFiZWwiOiJETSIsImFkZG9ucyI6bnVsbCwiaWdub3JlX2VtYWlsIjpmYWxzZSwiaWdub3JlX3NtcyI6ZmFsc2UsImlnbm9yZV93aGF0c2FwcCI6ZmFsc2UsInN1ZV9jb2RlIjpudWxsLCJyZXZva2VfY29kZSI6bnVsbCwiZmlyc3RfaW5zdHJ1Y3Rpb24iOm51bGwsInNlY29uZF9pbnN0cnVjdGlvbiI6bnVsbCwiZ3VhcmFudG9yX2FkZHJlc3NfbnVtYmVyIjpudWxsLCJndWFyYW50b3JfbmVpZ2hib3Job29kIjpudWxsLCJndWFyYW50b3JfcGhvbmVfbnVtYmVyIjpudWxsLCJndWFyYW50b3JfY2l0eV9uYW1lIjpudWxsLCJndWFyYW50b3Jfc3RhdGUiOm51bGwsImd1YXJhbnRvcl96aXBjb2RlIjpudWxsLCJndWFyYW50b3JfYWRkcmVzcyI6bnVsbCwiZ3VhcmFudG9yX2FkZHJlc3NfY29tcGxlbWVudCI6bnVsbCwiYmFyY29kZSI6IjAwMDkxMTMxMjAwMDAwMTAwMDAwMDAxMDAxMDAwMDAwMDAwMDAwMDAxNDE5IiwicmVnaXN0ZXJlZF9hdCI6bnVsbCwicHJldmVudF9yZWdpc3RyYXRpb24iOmZhbHNlLCJjdXN0b21lcl9pZCI6NzQ5OTcwLCJjb250cm9sX251bWJlciI6bnVsbCwiZGl2ZXJnZW50X3BheW1lbnRfdHlwZSI6bnVsbCwiZGl2ZXJnZW50X3BheW1lbnRfdmFsdWVfdHlwZSI6bnVsbCwiZGl2ZXJnZW50X3BheW1lbnRfbWF4aW11bV92YWx1ZSI6bnVsbCwiZGl2ZXJnZW50X3BheW1lbnRfbWluaW11bV92YWx1ZSI6bnVsbCwiZGl2ZXJnZW50X3BheW1lbnRfbWF4aW11bV9wZXJjZW50YWdlIjpudWxsLCJkaXZlcmdlbnRfcGF5bWVudF9taW5pbXVtX3BlcmNlbnRhZ2UiOm51bGwsImRpdmVyZ2VudF9wYXltZW50X2xpbWl0IjpudWxsLCJkYXlzX2Zvcl9kaXNjb3VudCI6bnVsbCwiZGF5c19mb3Jfc2Vjb25kX2Rpc2NvdW50IjpudWxsLCJzZWNvbmRfZGlzY291bnRfcGVyY2VudGFnZSI6bnVsbCwic2Vjb25kX2Rpc2NvdW50X3ZhbHVlIjpudWxsLCJkYXlzX2Zvcl90aGlyZF9kaXNjb3VudCI6bnVsbCwidGhpcmRfZGlzY291bnRfcGVyY2VudGFnZSI6bnVsbCwidGhpcmRfZGlzY291bnRfdmFsdWUiOm51bGwsImRheXNfZm9yX3N1ZSI6bnVsbCwiZGF5c19mb3JfbmVnYXRpdmF0aW9uIjpudWxsLCJpbnRlcmVzdF9wZXJjZW50YWdlIjpudWxsLCJpbnRlcmVzdF92YWx1ZSI6bnVsbCwiaW50ZXJlc3RfZGF5c190eXBlIjowLCJjdXN0b21lcl9jb250YWN0X3BlcnNvbiI6bnVsbCwiY3VzdG9tX2F0dGFjaG1lbnRfbmFtZSI6bnVsbCwic3BsaXRfcGF5bWVudCI6ZmFsc2UsImRpc3BhdGNoX3R5cGUiOjEsImNoYXJnZV90eXBlIjoxLCJjdXN0b21fZGF0YSI6bnVsbCwiaXNzdWVkX2F0IjoiMjAyNC0wMi0yNlQxNDoyNTowNC0wMzowMCIsInNob3J0ZW5fdXJsIjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIiLCJwaXhfZW5hYmxlZCI6ZmFsc2UsInBpeF9xcmNvZGUiOm51bGwsInBhc3N3b3JkX3Byb3RlY3RlZF9tb2RlIjpudWxsLCJyZXZva2VkX2F0IjpudWxsLCJyZWNpcGllbnRfYWNjb3VudCI6bnVsbCwicGl4X3R4aWQiOm51bGwsImNhbmNlbF90eXBlIjpudWxsLCJjYW5jZWxsYXRpb25fcmVhc29uIjpudWxsLCJwcmV2ZW50X3BpeCI6ZmFsc2UsInJlZHVjdGlvbl9hbW91bnQiOm51bGwsImluc3RydWN0aW9uc19tb2RlIjoxLCJpbXBvcnRfaWQiOm51bGwsInJlZHVjdGlvbl90eXBlIjpudWxsLCJyZWR1Y3Rpb25fcGVyY2VudGFnZSI6bnVsbCwidXJsX2hhc2giOiJleHZlZHIiLCJiYW5rX2JpbGxldF9kaXNjaGFyZ2VzIjpbXSwiYmFua19iaWxsZXRfcmVtaXR0YW5jZXMiOltdLCJiYW5rX2JpbGxldF9wYXltZW50cyI6W10sImJhbmtfYmlsbGV0X3JlZ2lzdHJhdGlvbnMiOltdLCJwaXgiOltdLCJiYW5rX2JpbGxldF9zcGxpdF9hY2NvdW50cyI6W119
+  recorded_at: Mon, 26 Feb 2024 17:25:04 GMT
+- request:
+    method: put
+    uri: https://api-sandbox.kobana.com.br/v1//bank_billets/632285/cancel
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <BEARER_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708968304&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=B87dBlZL%2BwYQ316X5CNPasmYleHCVJp4mBSZNCV91lU%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1708968304&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=B87dBlZL%2BwYQ316X5CNPasmYleHCVJp4mBSZNCV91lU%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Expect-Ct:
+      - max-age=0, report-uri="https://boletosimples.report-uri.com/r/d/ct/reportOnly"
+      Cross-Origin-Resource-Policy:
+      - cross-origin
+      Cross-Origin-Embedder-Policy:
+      - unsafe-none
+      Cross-Origin-Opener-Policy:
+      - unsafe-none
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4982'
+      Ratelimit-Limit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4982'
+      Cache-Control:
+      - no-cache
+      Content-Security-Policy-Report-Only:
+      - 'base-uri ''none''; default-src ''self'' https://app-sandbox.kobana.com.br
+        https://boletosimples.com.br https://*.boletosimples.com.br https://kobana.com.br
+        https://*.kobana.com.br; font-src ''self'' data: https://app-sandbox.kobana.com.br
+        https://fonts.googleapis.com https://fonts.gstatic.com https://themes.googleusercontent.com
+        https://cdnjs.cloudflare.com https://fonts.intercomcdn.com; img-src ''self''
+        data: https://app-sandbox.kobana.com.br https://maps.googleapis.com https://boleto.test:5001
+        https://bole.to https://*.google-analytics.com https://*.googletagmanager.com
+        https://ssl.gstatic.com https://www.gstatic.com https://*.g.doubleclick.net
+        https://*.google.com https://*.google.com.br https://googleads.g.doubleclick.net
+        https://www.facebook.com https://secure.gravatar.com https://albato.com https://zapier-images.imgix.net
+        https://boletosimples-sandbox.s3.amazonaws.com https://kobana-sandbox.s3.amazonaws.com
+        https://d3caatrp30sdc5.cloudfront.net; object-src ''none''; script-src ''self''
+        ''unsafe-inline'' ''strict-dynamic'' https://app-sandbox.kobana.com.br https://cdn.zapier.com
+        https://albato.com https://widget.pluga.co ''nonce-''; style-src ''self''
+        ''unsafe-inline'' https://app-sandbox.kobana.com.br https://fonts.googleapis.com
+        https://tagmanager.google.com https://cdn.zapier.com https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+        https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css;
+        child-src ''self'' https://www.googleadservices.com https://docs.google.com
+        https://googleads.g.doubleclick.net https://www.google.com https://www.google.com.br
+        https://app.popupdomination.com https://bid.g.doubleclick.net https://widget.pluga.co
+        https://www.googletagmanager.com https://www.facebook.com https://www.youtube.com
+        https://www.recaptcha.net; connect-src ''self'' https://boletosimples.com.br
+        https://*.boletosimples.com.br https://kobana.com.br https://*.kobana.com.br
+        https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com
+        https://*.g.doubleclick.net https://*.google.com https://*.google.com.br https://*.amplitude.com
+        https://*.mixpanel.com https://*.mxpnl.com https://*.intercom.io wss://*.intercom.io
+        https://albato.com https://zapier.com https://api.zapier.com; report-uri https://boletosimples.report-uri.com/r/d/csp/reportOnly'
+      X-Request-Id:
+      - 75a591b8-d623-4693-a24a-935163dd4aee
+      X-Runtime:
+      - '0.072741'
+      Date:
+      - Mon, 26 Feb 2024 17:25:04 GMT
+      X-Rack-Cache:
+      - invalidate, pass
+      Strict-Transport-Security:
+      - max-age=31556952; includeSubDomains; preload
+      Vary:
+      - Origin
+      X-Rack-Cors:
+      - miss; no-origin
+      Via:
+      - 1.1 vegur, 1.1 b9e3ae23b2e5d7b2e1c159467ba23f34.cloudfront.net (CloudFront)
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - IAD12-P3
+      X-Amz-Cf-Id:
+      - M41BizNx_zHeWQck1VzN3JTl8r_F5h8eRO9YTawqOne94J0fsaNqWw==
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 26 Feb 2024 17:25:04 GMT
+- request:
+    method: get
+    uri: https://api-sandbox.kobana.com.br/v1/bank_billets/632285.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <BEARER_TOKEN>
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Cowboy
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708968305&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8yBo6eUBaCCFaKHNeDHfcEAWx6JK0oyKqH6Y2WuXabQ%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1708968305&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8yBo6eUBaCCFaKHNeDHfcEAWx6JK0oyKqH6Y2WuXabQ%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Expect-Ct:
+      - max-age=0, report-uri="https://boletosimples.report-uri.com/r/d/ct/reportOnly"
+      Cross-Origin-Resource-Policy:
+      - cross-origin
+      Cross-Origin-Embedder-Policy:
+      - unsafe-none
+      Cross-Origin-Opener-Policy:
+      - unsafe-none
+      Etag:
+      - W/"cab06b4a979876658922512d22da3a07"
+      Last-Modified:
+      - Mon, 26 Feb 2024 17:25:04 GMT
+      Location:
+      - https://api-sandbox.kobana.com.br/api/v1/bank_billets/632285
+      Cache-Control:
+      - public
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '43'
+      Ratelimit-Limit:
+      - '60'
+      Ratelimit-Remaining:
+      - '43'
+      Content-Security-Policy-Report-Only:
+      - 'base-uri ''none''; default-src ''self'' https://app-sandbox.kobana.com.br
+        https://boletosimples.com.br https://*.boletosimples.com.br https://kobana.com.br
+        https://*.kobana.com.br; font-src ''self'' data: https://app-sandbox.kobana.com.br
+        https://fonts.googleapis.com https://fonts.gstatic.com https://themes.googleusercontent.com
+        https://cdnjs.cloudflare.com https://fonts.intercomcdn.com; img-src ''self''
+        data: https://app-sandbox.kobana.com.br https://maps.googleapis.com https://boleto.test:5001
+        https://bole.to https://*.google-analytics.com https://*.googletagmanager.com
+        https://ssl.gstatic.com https://www.gstatic.com https://*.g.doubleclick.net
+        https://*.google.com https://*.google.com.br https://googleads.g.doubleclick.net
+        https://www.facebook.com https://secure.gravatar.com https://albato.com https://zapier-images.imgix.net
+        https://boletosimples-sandbox.s3.amazonaws.com https://kobana-sandbox.s3.amazonaws.com
+        https://d3caatrp30sdc5.cloudfront.net; object-src ''none''; script-src ''self''
+        ''unsafe-inline'' ''strict-dynamic'' https://app-sandbox.kobana.com.br https://cdn.zapier.com
+        https://albato.com https://widget.pluga.co ''nonce-''; style-src ''self''
+        ''unsafe-inline'' https://app-sandbox.kobana.com.br https://fonts.googleapis.com
+        https://tagmanager.google.com https://cdn.zapier.com https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+        https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css;
+        child-src ''self'' https://www.googleadservices.com https://docs.google.com
+        https://googleads.g.doubleclick.net https://www.google.com https://www.google.com.br
+        https://app.popupdomination.com https://bid.g.doubleclick.net https://widget.pluga.co
+        https://www.googletagmanager.com https://www.facebook.com https://www.youtube.com
+        https://www.recaptcha.net; connect-src ''self'' https://boletosimples.com.br
+        https://*.boletosimples.com.br https://kobana.com.br https://*.kobana.com.br
+        https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com
+        https://*.g.doubleclick.net https://*.google.com https://*.google.com.br https://*.amplitude.com
+        https://*.mixpanel.com https://*.mxpnl.com https://*.intercom.io wss://*.intercom.io
+        https://albato.com https://zapier.com https://api.zapier.com; report-uri https://boletosimples.report-uri.com/r/d/csp/reportOnly'
+      X-Request-Id:
+      - d2f1a4d7-2c35-4e9e-a9af-563b438d839f
+      X-Runtime:
+      - '0.023563'
+      Date:
+      - Mon, 26 Feb 2024 17:25:05 GMT
+      X-Content-Digest:
+      - c57b4ea97a6932feb09002e4435c30d0f75950b1
+      X-Rack-Cache:
+      - miss, store
+      Strict-Transport-Security:
+      - max-age=31556952; includeSubDomains; preload
+      X-Rack-Cors:
+      - miss; no-origin
+      Vary:
+      - Origin,Accept-Encoding
+      Via:
+      - 1.1 vegur, 1.1 3d4bfc42e9575ee1f9559241c9e3f464.cloudfront.net (CloudFront)
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - IAD12-P3
+      X-Amz-Cf-Id:
+      - qOlOWEcRT4J4ZYjG9mtnj_mRoL8eu7pKaUnS1GouwbmB-jklAgwYGg==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6NjMyMjg1LCJleHBpcmVfYXQiOiIyMDI1LTEyLTMxIiwicGFpZF9hdCI6bnVsbCwiZGVzY3JpcHRpb24iOm51bGwsInN0YXR1cyI6ImNhbmNlbGVkIiwicmVnaXN0cmF0aW9uX3N0YXR1cyI6ImNvbmZpcm1lZCIsImN1c3RvbWVyX3BlcnNvbl9uYW1lIjoiRnVsYW5vIGRhIFNpbHZhIiwiY3VzdG9tZXJfY25wal9jcGYiOiIxNi45NzQuOTIzLzAwMDEtODQiLCJjdXN0b21lcl9hZGRyZXNzIjoiUnVhIGRhIENhc2EiLCJjdXN0b21lcl9zdGF0ZSI6IlNQIiwiY3VzdG9tZXJfbmVpZ2hib3Job29kIjoiQmFpcnJvIiwiY3VzdG9tZXJfemlwY29kZSI6IjAxMzEwMTAwIiwiY3VzdG9tZXJfYWRkcmVzc19udW1iZXIiOm51bGwsImN1c3RvbWVyX2FkZHJlc3NfY29tcGxlbWVudCI6bnVsbCwiY3VzdG9tZXJfcGhvbmVfbnVtYmVyIjpudWxsLCJjdXN0b21lcl9lbWFpbCI6bnVsbCwiY3VzdG9tZXJfZW1haWxfY2MiOm51bGwsImN1c3RvbWVyX2lnbm9yZV9lbWFpbCI6bnVsbCwiY3VzdG9tZXJfaWdub3JlX3NtcyI6bnVsbCwiY3VzdG9tZXJfbW9iaWxlX2xvY2FsX2NvZGUiOm51bGwsImN1c3RvbWVyX21vYmlsZV9udW1iZXIiOm51bGwsImN1c3RvbWVyX25pY2tuYW1lIjpudWxsLCJjdXN0b21lcl9ub3RlcyI6bnVsbCwiY3JlYXRlZF92aWFfYXBpIjp0cnVlLCJjdXN0b21lcl9jaXR5X25hbWUiOiJTw6NvIFBhdWxvIiwicGFpZF9hbW91bnQiOm51bGwsImFtb3VudCI6MTAwLjAsInVybCI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyIiwiZm9ybWF0cyI6eyJkZWZhdWx0IjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIiLCJwbmciOiJodHRwczovL3NhbmRib3guYm9sZS50by8zL2V4dmVkci5wbmciLCJwZGYiOiJodHRwczovL3NhbmRib3guYm9sZS50by8zL2V4dmVkci5wZGYiLCJib2xldG9faGlicmlkbyI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyL2JvbGV0b19oaWJyaWRvIiwiYm9sZXRvX3BpeCI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyL2JvbGV0b19waXgiLCJiYXJjb2RlIjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIvYmFyY29kZSIsImVudmVsb3BlIjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIvZW52ZWxvcGUiLCJsZXR0ZXIiOiJodHRwczovL3NhbmRib3guYm9sZS50by8zL2V4dmVkci9sZXR0ZXIiLCJsaW5lIjoiaHR0cHM6Ly9zYW5kYm94LmJvbGUudG8vMy9leHZlZHIvbGluZSIsInJlY2libyI6Imh0dHBzOi8vc2FuZGJveC5ib2xlLnRvLzMvZXh2ZWRyL3JlY2libyJ9LCJtZXRhIjpudWxsLCJmaW5lX2Zvcl9kZWxheSI6bnVsbCwiZmluZV90eXBlIjowLCJmaW5lX3BlcmNlbnRhZ2UiOm51bGwsImZpbmVfdmFsdWUiOm51bGwsImRheXNfZm9yX2ZpbmUiOm51bGwsImxhdGVfcGF5bWVudF9pbnRlcmVzdCI6bnVsbCwiaW50ZXJlc3RfdHlwZSI6MCwiaW50ZXJlc3RfZGFpbHlfdmFsdWUiOm51bGwsImludGVyZXN0X2RhaWx5X3BlcmNlbnRhZ2UiOm51bGwsImludGVyZXN0X21vbnRobHlfcGVyY2VudGFnZSI6bnVsbCwiZGF5c19mb3JfaW50ZXJlc3QiOm51bGwsImRpc2NvdW50X3R5cGUiOjAsImRpc2NvdW50X2xpbWl0X2RhdGUiOm51bGwsImRpc2NvdW50X3ZhbHVlIjpudWxsLCJkaXNjb3VudF9wZXJjZW50YWdlIjpudWxsLCJkYXlzX2Zvcl9yZXZva2UiOm51bGwsIm5vdGVzIjpudWxsLCJwYXltZW50X2NvdW50IjoxLCJiYW5rX2JpbGxldF9hY2NvdW50X2lkIjo1NTk5LCJiZW5lZmljaWFyeV9uYW1lIjoiSm/Do28gU2lsdmEiLCJiZW5lZmljaWFyeV9jbnBqX2NwZiI6IjE2Ljk3NC45MjMvMDAwMS04NCIsImJlbmVmaWNpYXJ5X2FkZHJlc3MiOiJBdmVuaWRhIFBhdWxpc3RhLCAxMDAwLCBCZWxhIFZpc3RhLCBTw6NvIFBhdWxvLCBTUCwgMDEzMTAxMDAiLCJiZW5lZmljaWFyeV9hc3NpZ25vcl9jb2RlIjoiMDAwMTUvMDAwMDAyNCIsImd1YXJhbnRvcl9uYW1lIjpudWxsLCJndWFyYW50b3JfY25wal9jcGYiOm51bGwsInBheW1lbnRfcGxhY2UiOiJQYWfDoXZlbCBlbSBxdWFscXVlciBiYW5jbyBhdMOpIGEgZGF0YSBkZSB2ZW5jaW1lbnRvLiIsImluc3RydWN0aW9ucyI6bnVsbCwiZG9jdW1lbnRfZGF0ZSI6bnVsbCwiZG9jdW1lbnRfdHlwZSI6IjAyIiwiZG9jdW1lbnRfbnVtYmVyIjpudWxsLCJhY2NlcHRhbmNlIjoiTiIsInByb2Nlc3NlZF9vdXJfbnVtYmVyIjoiMDAwMTUvMDAxLzAwMDAwMDAxNDEtOSIsInByb2Nlc3NlZF9vdXJfbnVtYmVyX3JhdyI6IjAwMDE1MDAxMDAwMDAwMDE0MTkiLCJiYW5rX2NvbnRyYWN0X3NsdWciOiJleGFtcGxlLWJhbmstYnMtMSIsImFnZW5jeV9udW1iZXIiOiIxMjM0IiwiYWdlbmN5X2RpZ2l0IjoiNSIsImFjY291bnRfbnVtYmVyIjoiMTIzMTIzIiwiYWNjb3VudF9kaWdpdCI6IjQiLCJleHRyYTEiOm51bGwsImV4dHJhMV9kaWdpdCI6bnVsbCwiZXh0cmEyIjpudWxsLCJleHRyYTJfZGlnaXQiOm51bGwsImxpbmUiOiIwMDA5MC4wMDEwMCAwMTAwMC4wMDAwMDggMDAwMDAuMDE0MTkxIDEgMTMxMjAwMDAwMTAwMDAiLCJvdXJfbnVtYmVyIjoiMTQxIiwiY3VzdG9tZXJfc3Vic2NyaXB0aW9uX2lkIjpudWxsLCJpbnN0YWxsbWVudF90b3RhbCI6bnVsbCwiaW5zdGFsbG1lbnRfbnVtYmVyIjpudWxsLCJpbnN0YWxsbWVudF9pZCI6bnVsbCwiY2FybmVfdXJsIjpudWxsLCJiYW5rX2JpbGxldF9sYXlvdXRfaWQiOm51bGwsImNyZWF0ZWRfYXQiOiIyMDI0LTAyLTI2VDE0OjI1OjA0LTAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMjQtMDItMjZUMTQ6MjU6MDQtMDM6MDAiLCJ0YWdzIjpbXSwidGFnX2xpc3QiOm51bGwsImRvY3VtZW50X3R5cGVfbGFiZWwiOiJETSIsImFkZG9ucyI6bnVsbCwiaWdub3JlX2VtYWlsIjpmYWxzZSwiaWdub3JlX3NtcyI6ZmFsc2UsImlnbm9yZV93aGF0c2FwcCI6ZmFsc2UsInN1ZV9jb2RlIjpudWxsLCJyZXZva2VfY29kZSI6bnVsbCwiZmlyc3RfaW5zdHJ1Y3Rpb24iOm51bGwsInNlY29uZF9pbnN0cnVjdGlvbiI6bnVsbCwiZ3VhcmFudG9yX2FkZHJlc3NfbnVtYmVyIjpudWxsLCJndWFyYW50b3JfbmVpZ2hib3Job29kIjpudWxsLCJndWFyYW50b3JfcGhvbmVfbnVtYmVyIjpudWxsLCJndWFyYW50b3JfY2l0eV9uYW1lIjpudWxsLCJndWFyYW50b3Jfc3RhdGUiOm51bGwsImd1YXJhbnRvcl96aXBjb2RlIjpudWxsLCJndWFyYW50b3JfYWRkcmVzcyI6bnVsbCwiZ3VhcmFudG9yX2FkZHJlc3NfY29tcGxlbWVudCI6bnVsbCwiYmFyY29kZSI6IjAwMDkxMTMxMjAwMDAwMTAwMDAwMDAxMDAxMDAwMDAwMDAwMDAwMDAxNDE5IiwicmVnaXN0ZXJlZF9hdCI6IjIwMjQtMDItMjZUMTQ6MjU6MDQtMDM6MDAiLCJwcmV2ZW50X3JlZ2lzdHJhdGlvbiI6ZmFsc2UsImN1c3RvbWVyX2lkIjo3NDk5NzAsImNvbnRyb2xfbnVtYmVyIjpudWxsLCJkaXZlcmdlbnRfcGF5bWVudF90eXBlIjpudWxsLCJkaXZlcmdlbnRfcGF5bWVudF92YWx1ZV90eXBlIjpudWxsLCJkaXZlcmdlbnRfcGF5bWVudF9tYXhpbXVtX3ZhbHVlIjpudWxsLCJkaXZlcmdlbnRfcGF5bWVudF9taW5pbXVtX3ZhbHVlIjpudWxsLCJkaXZlcmdlbnRfcGF5bWVudF9tYXhpbXVtX3BlcmNlbnRhZ2UiOm51bGwsImRpdmVyZ2VudF9wYXltZW50X21pbmltdW1fcGVyY2VudGFnZSI6bnVsbCwiZGl2ZXJnZW50X3BheW1lbnRfbGltaXQiOm51bGwsImRheXNfZm9yX2Rpc2NvdW50IjpudWxsLCJkYXlzX2Zvcl9zZWNvbmRfZGlzY291bnQiOm51bGwsInNlY29uZF9kaXNjb3VudF9wZXJjZW50YWdlIjpudWxsLCJzZWNvbmRfZGlzY291bnRfdmFsdWUiOm51bGwsImRheXNfZm9yX3RoaXJkX2Rpc2NvdW50IjpudWxsLCJ0aGlyZF9kaXNjb3VudF9wZXJjZW50YWdlIjpudWxsLCJ0aGlyZF9kaXNjb3VudF92YWx1ZSI6bnVsbCwiZGF5c19mb3Jfc3VlIjpudWxsLCJkYXlzX2Zvcl9uZWdhdGl2YXRpb24iOm51bGwsImludGVyZXN0X3BlcmNlbnRhZ2UiOm51bGwsImludGVyZXN0X3ZhbHVlIjpudWxsLCJpbnRlcmVzdF9kYXlzX3R5cGUiOjAsImN1c3RvbWVyX2NvbnRhY3RfcGVyc29uIjpudWxsLCJjdXN0b21fYXR0YWNobWVudF9uYW1lIjpudWxsLCJzcGxpdF9wYXltZW50IjpmYWxzZSwiZGlzcGF0Y2hfdHlwZSI6MSwiY2hhcmdlX3R5cGUiOjEsImN1c3RvbV9kYXRhIjpudWxsLCJpc3N1ZWRfYXQiOiIyMDI0LTAyLTI2VDE0OjI1OjA0LTAzOjAwIiwic2hvcnRlbl91cmwiOiJodHRwczovL3NhbmRib3guYm9sZS50by8zL2V4dmVkciIsInBpeF9lbmFibGVkIjpmYWxzZSwicGl4X3FyY29kZSI6bnVsbCwicGFzc3dvcmRfcHJvdGVjdGVkX21vZGUiOm51bGwsInJldm9rZWRfYXQiOm51bGwsInJlY2lwaWVudF9hY2NvdW50IjpudWxsLCJwaXhfdHhpZCI6bnVsbCwiY2FuY2VsX3R5cGUiOjEsImNhbmNlbGxhdGlvbl9yZWFzb24iOm51bGwsInByZXZlbnRfcGl4IjpmYWxzZSwicmVkdWN0aW9uX2Ftb3VudCI6bnVsbCwiaW5zdHJ1Y3Rpb25zX21vZGUiOjEsImltcG9ydF9pZCI6bnVsbCwicmVkdWN0aW9uX3R5cGUiOm51bGwsInJlZHVjdGlvbl9wZXJjZW50YWdlIjpudWxsLCJ1cmxfaGFzaCI6ImV4dmVkciIsImJhbmtfYmlsbGV0X2Rpc2NoYXJnZXMiOltdLCJiYW5rX2JpbGxldF9yZW1pdHRhbmNlcyI6W10sImJhbmtfYmlsbGV0X3BheW1lbnRzIjpbXSwiYmFua19iaWxsZXRfcmVnaXN0cmF0aW9ucyI6W3siaWQiOjE0MzAsImJhbmtfYmlsbGV0X2lkIjo2MzIyODUsImJhbmtfYmlsbGV0X2FjY291bnRfaWQiOjU1OTksImNyZWF0ZWRfYXQiOiIyMDI0LTAyLTI2VDE0OjI1OjA0LTAzOjAwIiwiZXJyb3JfbWVzc2FnZSI6bnVsbCwiZmFpbGVkX2F0IjpudWxsLCJmYWlsc19jb3VudCI6MCwicmVnaXN0ZXJlZF9hdCI6IjIwMjQtMDItMjZUMTQ6MjU6MDQtMDM6MDAiLCJzdGF0dXMiOiIxIiwidXBkYXRlZF9hdCI6IjIwMjQtMDItMjZUMTQ6MjU6MDQtMDM6MDAiLCJyZXRyeV9ibG9ja2VkIjpmYWxzZX1dLCJiYW5rX2JpbGxldF9zcGxpdF9hY2NvdW50cyI6W10sInBpeCI6W119
+  recorded_at: Mon, 26 Feb 2024 17:25:05 GMT
+recorded_with: VCR 6.2.0

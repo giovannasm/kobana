@@ -1,0 +1,43 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+html, body {
+  height:  100%;
+  margin:  0;
+}
+
+body.custom-body-background {
+  background-color: #E2E3E5;
+}
+
+.container {
+  min-height:  100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.form-control {
+  background-color: #E2E3E5;
+  border: 1px solid #f8f8fa;
+}
+
+.card-custom {
+  background-color: #E2E3E5;
+  border: 1px solid #f8f8fa;
+}

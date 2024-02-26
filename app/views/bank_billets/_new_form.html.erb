@@ -1,0 +1,21 @@
+<%= simple_form_for @bank_billet do |form| %>
+  <%= form.input :amount, label: "Valor", input_html: { class: 'form-control', step: 0.01 } %>
+
+  <%= form.input :expire_at, label: "Data limite de pagamento", as: :date, input_html: { class: 'form-control' } %>
+
+  <%= form.input :customer_person_name, label: "Nome", input_html: { class: 'form-control' } %>
+
+  <%= form.input :customer_cnpj_cpf, label: "CNPJ/CPF", input_html: { class: 'form-control' } %>
+
+  <%= form.input :customer_zipcode, label: "CEP", input_html: { class: 'form-control' } %>
+
+  <%= form.input :customer_neighborhood, label: "Bairro", input_html: { class: 'form-control' } %>
+
+  <%= form.input :customer_address, label: "Endereço", input_html: { class: 'form-control' } %>
+
+  <%= form.input :customer_city_name, label: "Cidade", input_html: { class: 'form-control' } %>
+
+  <%= form.input :customer_state, label: "Estado", input_html: { class: 'form-control' } %>
+
+  <%= form.button :submit, "Criar Boleto", class: "btn btn-outline-success" %>
+<% end %>

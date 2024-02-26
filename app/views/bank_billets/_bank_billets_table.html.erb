@@ -1,0 +1,43 @@
+<table class="table table-secondary">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Valor</th>
+      <th>Vencimento</th>
+      <th>Cliente</th>
+      <th>CPF/CNPJ</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bank_billets.each do |bank_billet| %>
+      <tr>
+        <td><%= bank_billet.id %></td>
+        <td><%= bank_billet.amount %></td>
+        <td><%= bank_billet.expire_at %></td>
+        <td><%= bank_billet.customer_person_name %></td>
+        <td><%= bank_billet.customer_cnpj_cpf %></td>
+        <td>
+          <%= button_to 'Ver', bank_billet_path(bank_billet), method: :get, class: 'btn btn-light me-3' %>
+        </td>
+        <td>
+          <%= button_to 'Editar', edit_bank_billet_path(bank_billet), method: :get, class: 'btn btn-light me-3', id: "edit-button-#{bank_billet.id}", data: { bank_billet_id: bank_billet.id } %>
+        </td>
+        <td>
+          <%= form_with(url: cancel_bank_billet_path(bank_billet), method: :put, local: true) do %>
+            <button
+              data-controller="cancel-button"
+              data-cancel-button-target="button"
+              data-cancel-button-id="<%= bank_billet.id %>"
+              data-cancel-button-status="<%= bank_billet.status %>" data-action="click->cancel-button#loadStatus"
+              class="btn btn-outline-danger me-3">
+              Cancelar
+            </button>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

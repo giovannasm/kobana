@@ -1,0 +1,6 @@
+<h1>Boletos Bancários</h1>
+<% if !@bank_billets.empty? && !@bank_billets.nil? %>
+  <%= render 'bank_billets_table' %>
+<% else %>
+  <p>Nenhum boleto bancário cadastrado.</p>
+<% end %>

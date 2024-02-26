@@ -1,0 +1,23 @@
+<div class="card mb-3 card-custom">
+  <div class="card-body">
+    <h5 class="card-title text-center"><%= @bank_billet.customer_person_name %></h5>
+    <p class="card-text">
+      <strong>CPF/CNPJ:</strong> <%= @bank_billet.customer_cnpj_cpf %><br>
+      <strong>Status:</strong> <%= @bank_billet.status %><br>
+      <strong>Valor:</strong> <%= @bank_billet.amount %> R$<br>
+      <strong>Vencimento:</strong> <%= @bank_billet.expire_at %>
+    </p>
+    <div class="d-flex justify-content-start">
+      <%= form_with(url: cancel_bank_billet_path(@bank_billet), method: :put, local: true) do %>
+        <button
+          data-controller="cancel-button"
+          data-cancel-button-target="button"
+          data-cancel-button-id="<%= @bank_billet.id %>" data-cancel-button-status="<%= @bank_billet.status %>" data-action="click->cancel-button#loadStatus"
+          class="btn btn-outline-danger me-4">
+          Cancelar
+        </button>
+      <% end %>
+      <%= button_to 'Editar', edit_bank_billet_path(@bank_billet), method: :get, class: 'btn btn-light me-3', id: "edit-button-#{@bank_billet.id}", data: { bank_billet_id: @bank_billet.id } %>
+    </div>
+  </div>
+</div>
